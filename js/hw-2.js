@@ -1,8 +1,8 @@
-var userName = prompt("Будь ласка, введіть своє ім'я:");
+let userName = prompt("Будь ласка, введіть своє ім'я:");
 
 if (userName && userName) {
     alert("Привіт " + userName);
-    
+
 } else {
     alert("Введіть, будь ласка, ваше ім'я.");
 }
