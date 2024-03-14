@@ -33,15 +33,86 @@
 
     <input class="input" type="text" placeholder="type something" />
     <button class="send">send</button>
+    <hr />
+    <!-- HOMEWORK 10 -->
 
-    <script src="./js/hw-1.js"></script>
-    <script src="./js/hw-2.js"></script>
-    <script src="./js/hw-3.js"></script>
-    <script src="./js/hw-5.js"></script>
-    <script src="./js/hw-6.js"></script>
-    <script src="./js/hw-7.js"></script>
-    <script src="./js/hw-8.js"></script>
-    <script src="./js/hw-9.js"></script>
-    <script src="./js/script.js"></script>
+    <button class="button" data-action="open-modal">Відкрити модалку</button>
+
+    <div class="backdrop js-backdrop show-modal">
+      <div class="modal">
+        <h2>Modal window</h2>
+        <p>
+          In user interface design for computer applications, a modal window is
+          a graphical control element subordinate to an application's main window.
+          It creates a mode that disables the main window but keeps it visible,
+          with the modal window as a child window in front of it. Users must
+          interact with the modal window before they can return to the parent
+          application. This avoids interrupting the workflow on the main window.
+          Modal windows are sometimes called heavy windows or modal dialogs
+          because they often display a dialog box.
+        </p>
+        <button type="button" class="button" data-action="close-modal">Закрити</button>
+      </div>
+    </div>
+
+    <input type="text" placeholder="Ваше ім'я?" id="name-input" />
+    <h1>Привіт, <span id="name-output">незнайомець</span></h1>
+
+    <input
+      type="text"
+      id="validation-input"
+      data-length="6"
+      placeholder="Введи 6 символів"
+    />
+
+    <input id="font-size-control" type="range" />
+    <br />
+    <span id="text">Абракадабра!</span>
+    <hr>
+    <!-- HOMEWORK 11 -->
+
+    <form id="form1">
+      <input type="text" id="input1" />
+      <input type="text" id="input2" />
+      <button type="button" onclick="checkFields()">Перевірити</button>
+    </form>
+
+    <form id="form2">
+      <input type="number" id="num1" />
+      <input type="number" id="num2" />
+      <button type="button" onclick="checkSum()">Перевірити</button>
+    </form>
+
+    <form id="form3">
+      <input type="text" id="textInput" />
+      <button type="button" onclick="checkText()">Перевірити</button>
+    </form>
+
+    <form id="form4">
+      <input type="number" id="numberInput" />
+      <button type="button" onclick="checkNumber()">Перевірити</button>
+    </form>
+
+    <form id="form5" onsubmit="return validateForm()">
+      <input type="text" id="name" placeholder="Ім'я (не менше 3 символів)" />
+      <input type="text" id="email" placeholder="Email" />
+      <input
+        type="password"
+        id="password"
+        placeholder="Пароль (не менше 6 символів)"
+      />
+      <button type="submit">Перевірити</button>
+    </form>
+
+    <script src="./js/hw/hw-1.js"></script>
+    <script src="./js/hw/hw-2.js"></script>
+    <script src="./js/hw/hw-3.js"></script>
+    <script src="./js/hw/hw-5.js"></script>
+    <script src="./js/hw/hw-6.js"></script>
+    <script src="./js/hw/hw-7.js"></script>
+    <script src="./js/hw/hw-8.js"></script>
+    <script src="./js/hw/hw-9.js"></script>
+    <script src="./js/hw/hw-10.js"></script>
+    <script src="./js/hw/hw-11.js"></script>
   </body>
 </html>
