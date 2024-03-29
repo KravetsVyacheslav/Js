@@ -127,3 +127,21 @@ if (number > 0) {
 } else {
   alert("0");
 }
+
+function getRandomNumber() {
+  const randomNumber = Math.floor(Math.random() * 6) + 1;
+
+  if (randomNumber === 1) {
+    return "The random number is 1!";
+  } else if (randomNumber = 2) {
+    return "The random number is 2!";
+  } else if (randomNumber = 3) {
+    return "The random number is 3!";
+  } else if (randomNumber = 4) {
+    return "The random number is 4!";
+  } else {
+    return "The random number is 5!";
+  }
+}
+
+console.log(getRandomNumber());

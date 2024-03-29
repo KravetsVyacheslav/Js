@@ -43,15 +43,17 @@
         <h2>Modal window</h2>
         <p>
           In user interface design for computer applications, a modal window is
-          a graphical control element subordinate to an application's main window.
-          It creates a mode that disables the main window but keeps it visible,
-          with the modal window as a child window in front of it. Users must
-          interact with the modal window before they can return to the parent
-          application. This avoids interrupting the workflow on the main window.
-          Modal windows are sometimes called heavy windows or modal dialogs
-          because they often display a dialog box.
+          a graphical control element subordinate to an application's main
+          window. It creates a mode that disables the main window but keeps it
+          visible, with the modal window as a child window in front of it. Users
+          must interact with the modal window before they can return to the
+          parent application. This avoids interrupting the workflow on the main
+          window. Modal windows are sometimes called heavy windows or modal
+          dialogs because they often display a dialog box.
         </p>
-        <button type="button" class="button" data-action="close-modal">Закрити</button>
+        <button type="button" class="button" data-action="close-modal">
+          Закрити
+        </button>
       </div>
     </div>
 
@@ -68,7 +70,7 @@
     <input id="font-size-control" type="range" />
     <br />
     <span id="text">Абракадабра!</span>
-    <hr>
+    <hr />
     <!-- HOMEWORK 11 -->
 
     <form id="form1">
@@ -103,7 +105,55 @@
       />
       <button type="submit">Перевірити</button>
     </form>
+    <hr />
+    <!-- HOMEWORK 12 -->
+    <form>
+      <label for="beverage">Оберіть напій:</label>
+      <select id="beverage" onchange="displayMessage()">
+        <option value="coffee">Кава</option>
+        <option value="tea">Чай</option>
+        <option value="juice">Сік</option>
+      </select>
+    </form>
+    <div id="message"></div>
 
+    <label for="dayInput">Введіть день тижня:</label>
+    <input type="text" id="dayInput" required />
+    <button id="checkDayBtn">Перевірити</button>
+    <div id="result_1"></div>
+
+    <label for="monthInputSeason"
+      >Введіть номер місяця для визначення пори року:</label
+    >
+    <input type="number" id="monthInputSeason" min="1" max="12" required />
+    <button id="checkSeasonBtn">Визначити пору року</button>
+    <div id="result_2"></div>
+
+    <label for="monthInputDays"
+      >Введіть номер місяця для визначення кількості днів:</label
+    >
+    <input type="number" id="monthInputDays" min="1" max="12" required />
+    <button id="checkDaysBtn">Вивести кількість днів</button>
+    <div id="result_3"></div>
+
+    <label for="colorInput">Введіть назву кольору для визначення дії:</label>
+    <input type="text" id="colorInput" required />
+    <button id="checkColorBtn">Визначити дію</button>
+    <div id="result_4"></div>
+
+    <label for="num1">Число 1:</label>
+    <input type="number" id="num1" required /><br />
+    <label for="num2">Число 2:</label>
+    <input type="number" id="num2" required /><br />
+    <label for="operation">Оператор:</label>
+    <select id="operation">
+      <option value="add">+</option>
+      <option value="subtract">-</option>
+      <option value="multiply">*</option>
+      <option value="divide">/</option></select
+    ><br />
+    <button id="calculateBtn">Рахувати</button>
+    <div id="result_5"></div>
     <script src="./js/hw/hw-1.js"></script>
     <script src="./js/hw/hw-2.js"></script>
     <script src="./js/hw/hw-3.js"></script>
@@ -114,5 +164,7 @@
     <script src="./js/hw/hw-9.js"></script>
     <script src="./js/hw/hw-10.js"></script>
     <script src="./js/hw/hw-11.js"></script>
+    <script src="./js/hw/hw-12.js"></script>
+    <script src="./js/hw/hw-13.js"></script>
   </body>
 </html>
