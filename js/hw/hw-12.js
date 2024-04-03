@@ -1,3 +1,5 @@
+"use strict";
+
 let selectedBeverage = document.getElementById("beverage");
 let message = "";
 selectedBeverage.addEventListener("change", () => {
@@ -145,18 +147,19 @@ calculateBtn.addEventListener("click", function () {
 
   let result = 0;
   switch (operationValue) {
-    case "add":
+    case "+":
       result = num1Value + num2Value;
       break;
-    case "subtract":
+    case "-":
       result = num1Value - num2Value;
       break;
-    case "multiply":
+    case "*":
       result = num1Value * num2Value;
       break;
-    case "divide":
+    case "/":
       if (num2Value === 0 || isNaN(num2Value)) {
-        resultDiv.textContent = "Попередження: ділення на нуль або введіть коректне число!";
+        resultDiv.textContent =
+          "Попередження: ділення на нуль або введіть коректне число!";
         return;
       }
       result = num1Value / num2Value;

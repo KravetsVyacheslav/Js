@@ -1,3 +1,5 @@
+"use strict";
+
 const btnChange = document.querySelector(".btn__change");
 
 btnChange.addEventListener("click", () => {

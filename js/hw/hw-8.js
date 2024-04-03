@@ -1,3 +1,5 @@
+"use strict";
+
 const textField = document.getElementById("textField");
 const changeButton = document.getElementById("changeButton");
 

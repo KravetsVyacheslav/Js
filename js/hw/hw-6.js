@@ -1,3 +1,5 @@
+"use strict";
+
 const email = "0907@gmail.com";
 
 console.log(email.includes("@"));

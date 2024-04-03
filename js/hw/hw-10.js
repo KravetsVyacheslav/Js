@@ -1,3 +1,5 @@
+"use strict";
+
 const openModalButton = document.querySelector('[data-action="open-modal"]');
 const closeModalButton = document.querySelector('[data-action="close-modal"]');
 const modalBackdrop = document.querySelector('.backdrop');
