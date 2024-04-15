@@ -11,7 +11,7 @@ for (let i = 0; i < fruit.length; i++) {
 console.log(result);
 
 const number = ["one", "two", "three", "four"];
-const result_02V = number.join(", ");
+const result_02V = number.join(",  ");
 console.log(result_02V);
 // 2;3;4;5
 let cards = ["Card 1", "Card 2", "Card 3", "Card 4"];
