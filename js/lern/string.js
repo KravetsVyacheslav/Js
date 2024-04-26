@@ -1,4 +1,4 @@
-"use strict";
+/* "use strict";
 
 const message = "Mango" + "is" + "happy";
 console.log(message);
@@ -51,7 +51,7 @@ let questList = `Гості:
 2) fsdi
 3) jdso` */
 
-let questList = "Гості: \n 1) \n Ivan2) \n fsdi3) jdso";
+/* let questList = "Гості: \n 1) \n Ivan2) \n fsdi3) jdso";
 console.log(questList);
 
 console.log(questList);
@@ -133,11 +133,11 @@ function getRandomNumber() {
 
   if (randomNumber === 1) {
     return "The random number is 1!";
-  } else if (randomNumber = 2) {
+  } else if ((randomNumber = 2)) {
     return "The random number is 2!";
-  } else if (randomNumber = 3) {
+  } else if ((randomNumber = 3)) {
     return "The random number is 3!";
-  } else if (randomNumber = 4) {
+  } else if ((randomNumber = 4)) {
     return "The random number is 4!";
   } else {
     return "The random number is 5!";
@@ -145,3 +145,19 @@ function getRandomNumber() {
 }
 
 console.log(getRandomNumber());
+ */
+/* Напишіть функцію, яка повертає новий масив, в якому всі елементи масиву помножені на задане число, з використанням колбек-функції */
+
+const mutiplayArai = (array, nam, callback) => {
+  const resultArray = [];
+  for (const caunt of array) {
+    resultArray.push(nam * caunt);
+  }
+  callback(resultArray);
+};
+const showResulit = (result) => {
+  console.log(result);
+};
+mutiplayArai([1, 2, 3, 4, 5], 3, showResulit);
+
+
